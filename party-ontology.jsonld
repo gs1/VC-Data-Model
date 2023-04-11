@@ -1,0 +1,37 @@
+{
+	"@context": {
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"schema": "http://schema.org/",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"sw": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"gs1": "https://www.gs1.org/voc/",
+		"cred": "https://www.w3.org/2018/credentials#"
+	},
+	"@graph": [
+		{
+			"@id": "gs1:GS1PartyDataCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1DataCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "The party data credential is the Verifiable Credential that is shared with parties interested in the basic information associated with a party identified by a GLN."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Party Data Credential"
+			},
+			"sw:term_status": "testing"
+		}
+	]
+}

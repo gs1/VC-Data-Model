@@ -1,0 +1,147 @@
+{
+	"@context": {
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"schema": "http://schema.org/",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"sw": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"gs1": "https://www.gs1.org/voc/",
+		"cred": "https://www.w3.org/2018/credentials#"
+	},
+	"@graph": [
+		{
+			"@id": "gs1:GS1KeyCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1ExtensibleCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "This is the Verifiable Credential that indicates that something has been identified. It contains no data about what has been identified as that is done via the association process."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Key Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1DataCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "cred:VerifiableCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A data credential is data about something identified with a key credential."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Data Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1DelegationCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "cred:VerifiableCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "This is the Verifiable Credential that delegates to another party the right to issue data credentials on behalf of the issuer of this credential."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Delegation Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:sameAs",
+			"@type": [
+				"owl:ObjectProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "If the credential subject ID is not a GS1 Digital Link URI, this specifies the GS1 Digital Link URI."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Same as"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1DataCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:anyURI"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:keyAuthorization",
+			"@type": [
+				"owl:ObjectProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Reference to a credential that authorizes the issuer to declare data for the credential subject (the key)."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Key credential"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1DataCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:anyURI"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:dataCertification",
+			"@type": [
+				"owl:ObjectProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "List of references to credentials that certify that the issuer is competent to declare data of the given type."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Data certification"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1DataCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:anyURI"
+			},
+			"sw:term_status": "testing"
+		}
+	]
+}

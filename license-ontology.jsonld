@@ -1,0 +1,642 @@
+{
+	"@context": {
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"schema": "http://schema.org/",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"sw": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"gs1": "https://www.gs1.org/voc/",
+		"cred": "https://www.w3.org/2018/credentials#"
+	},
+	"@graph": [
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "This is an enumeration of all available GS1 identification key types."
+			},
+			"rdfs:subClassOf": {
+				"@id": "gs1:TypeCode"
+			}
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GTIN",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Trade Item Number."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GTIN"
+			},
+			"skos:prefLabel": "GTIN"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GLN",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Location Number."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GLN"
+			},
+			"skos:prefLabel": "GLN"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-SSCC",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Serial Shipping Container Code."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "SSCC"
+			},
+			"skos:prefLabel": "SSCC"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GRAI",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Returnable Asset Identifier."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GRAI"
+			},
+			"skos:prefLabel": "GRAI"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GIAI",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Individual Asset Identifier."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GIAI"
+			},
+			"skos:prefLabel": "GIAI"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GSRN",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Service Relation Number."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GSRN"
+			},
+			"skos:prefLabel": "GSRN"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GDTI",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Document Type Identifier."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GDTI"
+			},
+			"skos:prefLabel": "GDTI"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GINC",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Identification Number for Consignment."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GINC"
+			},
+			"skos:prefLabel": "GINC"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GSIN",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Shipment Identification Number."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GSIN"
+			},
+			"skos:prefLabel": "GSIN"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GCN",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Coupon Number."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GCN"
+			},
+			"skos:prefLabel": "GCN"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-CPID",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Component/Part Identifier."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "CPID"
+			},
+			"skos:prefLabel": "CPID"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyTypeCode-GMN",
+			"@type": "gs1:GS1IdentificationKeyTypeCode",
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Global Model Number."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GMN"
+			},
+			"skos:prefLabel": "GMN"
+		},
+		{
+			"@id": "gs1:GS1ExtensibleCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "cred:VerifiableCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "This is the abstract superclass of any Verifiable Credential in the GS1 ecosystem that is extensible, i.e., that can be extended from another."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Extensible Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1BaseLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1ExtensibleCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "This is the abstract superclass of any Verifiable Credential that is shared with parties interested in the license (licence) information associated with a GS1 identification key."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Base License Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1PrefixLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A GS1 Prefix is issued by GS1 Global Office and allocated a GS1 Member Organisation or to itself for the purpose of issuing GS1 Company Prefix, GS1 identification key, GS1 delegated prefix, or GS1 delegated identification key licenses (licences)."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Prefix License Credential"
+			},
+			"owl:disjointWith": [
+				{
+					"@id": "gs1:GS18PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1CompanyPrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1IdentificationKeyLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedIdentificationKeyLicenseCredential"
+				}
+			],
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS18PrefixLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A GS1-8 Prefix is issued by GS1 Global Office and allocated a GS1 Member Organisation or to itself for the purpose of issuing GS1 identification key licenses (licences) for GTIN-8s. "
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1-8 Prefix License (Licence) Credential"
+			},
+			"owl:disjointWith": [
+				{
+					"@id": "gs1:GS1PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1CompanyPrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1IdentificationKeyLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedIdentificationKeyLicenseCredential"
+				}
+			],
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1CompanyPrefixLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A GS1 Company Prefix License (licence) is issued by a GS1 Member Organisation or GS1 Global Office and allocated to a user company or to itself for the purpose of generating class 1 GS1 identification keys."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Company Prefix License (Licence) Credential"
+			},
+			"owl:disjointWith": [
+				{
+					"@id": "gs1:GS1PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS18PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1IdentificationKeyLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedIdentificationKeyLicenseCredential"
+				}
+			],
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1BaseIdentificationKeyLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "This is the abstract superclass that provides base functionality for license (licence) credential types that support GS1 identification keys."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Base Identification Key License (Licence) Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1IdentificationKeyLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseIdentificationKeyLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A GS1 identification key license (license) is issued by a GS1 Member Organisation or GS1 Global Office and entitles the user company to allocate that key to an object."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Identification Key License (Licence) Credential"
+			},
+			"owl:disjointWith": [
+				{
+					"@id": "gs1:GS1PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS18PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1CompanyPrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedIdentificationKeyLicenseCredential"
+				}
+			],
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1DelegatedPrefixLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A GS1 delegated prefix license (licence) is a transfer of licensing responsibility for a subset of a GS1 Prefix by GS1 Global Office or a GS1 Member Organisation to another party."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Delegated Prefix License (Licence) Credential"
+			},
+			"owl:disjointWith": [
+				{
+					"@id": "gs1:GS1PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS18PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1CompanyPrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1IdentificationKeyLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedIdentificationKeyLicenseCredential"
+				}
+			],
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:GS1DelegatedIdentificationKeyLicenseCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:GS1BaseIdentificationKeyLicenseCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "A GS1 delegated identification key license (licence) is a transfer of licensing responsibility for a single GS1 identification key by GS1 Global Office or a GS1 Member Organisation to a (different) GS1 Member Organisation."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Delegated GTIN-8 License Credential"
+			},
+			"owl:disjointWith": [
+				{
+					"@id": "gs1:GS1PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS18PrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1CompanyPrefixLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1IdentificationKeyLicenseCredential"
+				},
+				{
+					"@id": "gs1:GS1DelegatedLicenseCredential"
+				}
+			],
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:extendsCredential",
+			"@type": [
+				"owl:ObjectProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Reference to the credential that this one extends. Provides a complete chain to the GS1 Prefix or GS1-8 Prefix license credential issued by GS1 Global Office."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Extends credential"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1ExtensibleCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:anyURI"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:licenseValue",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Value of the license."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "License value"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:string"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:alternativeLicenseValue",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Alternative value of the license."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Alternative license value"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1BaseLicenseCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:string"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:identificationKeyType",
+			"@type": [
+				"owl:ObjectProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "For a GS1 identification key license, this is the identification key type of the license; this plus the license value define the GS1 identification key. For a GS1 delegated prefix license, this is the identification key type supported by this license credential; if null, all identification key types are supported."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Identification key type"
+			},
+			"rdfs:domain": {
+				"owl:unionOf": [
+					{
+						"@id": "gs1:GS1BaseIdentificationKeyLicenseCredential"
+					},
+					{
+						"@id": "gs1:GS1DelegatedPrefixLicenseCredential"
+					}
+				]
+			},
+			"rdfs:range": {
+				"@id": "gs1:GS1IdentificationKeyTypeCode"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:isGS1CompanyPrefixLicenseAllowed",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Assumed false if null. If true, the licensee is permitted to create GS1 Company Prefix licenses based on this GS1 delegated prefix license."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "GS1 Company Prefix allowed"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1DelegatedPrefixLicenseCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:boolean"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:isExactMatchRequired",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Required if isGS1CompanyPrefixAllowed is true. If true, the licensee is permitted to create only one GS1 Company Prefix license based on this GS1 delegated prefix license and both license values must match exactly."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Exact match required"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1DelegatedPrefixLicenseCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:boolean"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:isGS1IdentificationKeyLicenseAllowed",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "Assumed false if null. If true, the licensee is allowed to create GS1 identification key licenses for identification key types supported by this GS1 delegated prefix license."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Identification key license allowed"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:GS1DelegatedPrefixLicenseCredential"
+			},
+			"rdfs:range": {
+				"@id": "xsd:boolean"
+			},
+			"sw:term_status": "testing"
+		}
+	]
+}
