@@ -1,0 +1,126 @@
+{
+	"@context": {
+		"@version": 1.1,
+		"owl": "http://www.w3.org/2002/07/owl#",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"schema": "http://schema.org/",
+		"skos": "http://www.w3.org/2004/02/skos/core#",
+		"sw": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"gs1": "https://gs1.org/voc/",
+		"cred": "https://www.w3.org/2018/credentials#"
+	},
+	"@graph": [
+		{
+			"@id": "gs1:PlanogramDataCredential",
+			"@type": [
+				"owl:Class",
+				"rdfs:Class"
+			],
+			"rdfs:subClassOf": {
+				"@id": "gs1:DataCredential"
+			},
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "The planogram data credential is the Verifiable Credential that is shared with parties interested in the planogram dimensions and weight of a product identified by a GTIN."
+			},
+			"rdfs:isDefinedBy": {
+				"@id": "gs1:"
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Planogram Data Credential"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:inPackageWidth",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "The width of the product in the package."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "In-package width"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:PlanogramDataCredential"
+			},
+			"rdfs:range": {
+				"@id": "gs1:QuantitativeValue"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:inPackageDepth",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "The depth of the product in the package."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "In-package depth"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:PlanogramDataCredential"
+			},
+			"rdfs:range": {
+				"@id": "gs1:QuantitativeValue"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:inPackageHeight",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "The height of the product in the package."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "In-package height"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:PlanogramDataCredential"
+			},
+			"rdfs:range": {
+				"@id": "gs1:QuantitativeValue"
+			},
+			"sw:term_status": "testing"
+		},
+		{
+			"@id": "gs1:grossWeight",
+			"@type": [
+				"owl:DatatypeProperty",
+				"rdf:Property"
+			],
+			"rdfs:comment": {
+				"@language": "en",
+				"@value": "The gross weight of the product including all packaging materials."
+			},
+			"rdfs:label": {
+				"@language": "en",
+				"@value": "Gross weight"
+			},
+			"rdfs:domain": {
+				"@id": "gs1:PlanogramDataCredential"
+			},
+			"rdfs:range": {
+				"@id": "gs1:QuantitativeValue"
+			},
+			"sw:term_status": "testing"
+		}
+	]
+}
