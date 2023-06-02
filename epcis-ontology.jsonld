@@ -1,0 +1,59 @@
+{
+    "@context": {
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "schema": "http://schema.org/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "sw": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "gs1": "https://www.gs1.org/voc/",
+        "cred": "https://www.w3.org/2018/credentials#"
+    },
+    "@graph": [
+        {
+            "@id": "gs1:EPCISDocumentCredential",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:subClassOf": {
+                "@id": "gs1:GS1DataCredential"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The EPCIS document credential is the Verifiable Credential that is used to sign EPCIS 2.0 documents."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EPCIS Document Credential"
+            },
+            "sw:term_status": "testing"
+        },
+        {
+            "@id": "gs1:EPCISEventCredential",
+            "@type": [
+                "owl:Class",
+                "rdfs:Class"
+            ],
+            "rdfs:subClassOf": {
+                "@id": "gs1:GS1DataCredential"
+            },
+            "rdfs:comment": {
+                "@language": "en",
+                "@value": "The EPCIS event credential is the Verifiable Credential that is used to sign EPCIS 2.0 events."
+            },
+            "rdfs:isDefinedBy": {
+                "@id": "gs1:"
+            },
+            "rdfs:label": {
+                "@language": "en",
+                "@value": "EPCIS Event Credential"
+            },
+            "sw:term_status": "testing"
+        }
+    ]
+}
